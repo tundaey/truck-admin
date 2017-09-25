@@ -1,0 +1,45 @@
+<div class="page-content">
+		<div class="container-fluid">
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h2 style="display: inline; padding: 10px">Drivers</h2>
+							<button type="button" class="btn btn-inline">New Driver</button>
+							<button type="button" class="btn btn-inline">Fleet Owners</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="card">
+				<div class="card-block">
+					<table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+						<thead>
+						<tr>
+							<th>First Name</th>
+              <th>Last Name</th>
+              <th>SS#</th>
+							<th>Last Drug Date</th>
+							<th>Address</th>
+							<th>City</th>
+						
+						</tr>
+						</thead>
+						<tbody>
+						<tr *ngFor="let driver of drivers" [routerLink]="[driver.id, 'info']">
+							<td>{{driver.first}}</td>
+							<td>{{driver.last}}</td>
+							<td>{{driver.ss}}</td>
+							<td>{{driver.last_drug_date | date}}</td>
+							<td>{{driver.address}}</td>
+							<td>{{driver.city}}</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+    </div><!--.container-fluid-->
+    <router-outlet></router-outlet>
+  </div><!--.page-content-->
+  
+  

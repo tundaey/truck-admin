@@ -1,0 +1,28 @@
+<section class="tabs-section">
+				<div class="tabs-section-nav tabs-section-nav-inline">
+					<ul class="nav" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link" routerLinkActive="active" [routerLink]="['info']" role="tab" data-toggle="tab">
+								Driver Info
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" routerLinkActive="active" [routerLink]="['history']" role="tab" data-toggle="tab">
+								History
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" routerLinkActive="active" [routerLink]="['deductions']" role="tab" data-toggle="tab">
+								Recurring Deductions
+							</a>
+						</li>
+						
+					</ul>
+				</div><!--.tabs-section-nav-->
+
+				<div class="tab-content">
+          <router-outlet></router-outlet>
+					<!-- <div role="tabpanel" class="tab-pane fade in active" id="tabs-4-tab-1">Tab 1</div>
+					<div role="tabpanel" class="tab-pane fade" id="tabs-4-tab-2">Tab 2</div> -->
+				</div><!--.tab-content-->
+			</section><!--.tabs-section-->
