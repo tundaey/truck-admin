@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {DataTableModule} from 'angular-4-data-table/src/index'
 import {routing} from './app.routes';
 
 import {AuthService} from './services/auth.service';
@@ -55,7 +54,6 @@ import { TruckInfoComponent } from './admin/trucks/truck-info/truck-info.compone
   imports: [
     BrowserModule,
     FormsModule,
-    DataTableModule,
     HttpModule,
     routing
   ],
