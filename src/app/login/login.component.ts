@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     this.auth.login(this.user)
     .then((user)=> {
       console.log(user)
-      this.router.navigateByUrl('/app')
+      this.router.navigateByUrl('/app/drivers')
     })
   }
 
