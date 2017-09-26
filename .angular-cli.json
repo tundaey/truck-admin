@@ -19,7 +19,21 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/css/lib/font-awesome/font-awesome.min.css",
+        "assets/css/separate/vendor/bootstrap-select/bootstrap-select.min.css",
+        "assets/css/separate/pages/contacts.min.css",
+        "assets/css/separate/pages/widgets.min.css",
+        "assets/css/separate/pages/others.min.css",
+        "assets/css/separate/vendor/datatables-net.min.css",
+        "assets/css/lib/datatables-net/datatables.min.css",
+        "assets/css/lib/jqueryui/jquery-ui.min.css",
+        "assets/css/separate/vendor/lobipanel.min.css",
+        "assets/css/lib/lobipanel/lobipanel.min.css",
+        "assets/css/separate/pages/user.min.css",
+        "assets/css/separate/vendor/select2.min.css",
+        "assets/css/lib/bootstrap/bootstrap.min.css",
+         "assets/css/main.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

@@ -1,0 +1,60 @@
+<div class="page-content">
+		<div class="container-fluid">
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h2 style="display: inline; padding: 10px">Trucks</h2>
+							<button [routerLink]="['../driver/new']" type="button" class="btn btn-inline">New Truck</button>
+							<button type="button" class="btn btn-inline">Fleet Owners</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="card">
+				<div class="card-block">
+					<table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+						<thead>
+						<tr>
+							<th>Unit #</th>
+              <th>Last Trl</th>
+              <th>Driver</th>
+							<th>Status</th>
+							<th>Dispatcher</th>
+							<th>Federal Inspection</th>
+							<th>Federal Pro</th>
+							<th>Location</th>
+							<th>ST</th>
+							<th>Zip</th>
+							<th>Dest Date</th>
+							<th>Last Call</th>
+							<th>Last CCC Time</th>
+						
+						</tr>
+						</thead>
+						<tbody>
+						<tr *ngFor="let truck of trucks" [routerLink]="[truck.id, 'info']">
+							<td><input type="checkbox"/></td>
+							<td>{{truck.unit_no}}</td>
+							<td>{{truck.last_trl}}</td>
+							<td>{{truck.driver}}</td>
+							<td>{{truck.status}}</td>
+							<td>{{truck.dispatcher}}</td>
+							<td>{{truck.federal_inspection}}</td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+    </div><!--.container-fluid-->
+    <router-outlet></router-outlet>
+  </div><!--.page-content-->
+  
+  

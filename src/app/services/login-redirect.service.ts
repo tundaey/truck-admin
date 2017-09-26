@@ -8,7 +8,7 @@ export class LoginRedirectService implements CanActivate {
   constructor(private auth:AuthService, private router:Router) { }
   canActivate(): boolean{
     if(localStorage.getItem('token')){
-      this.router.navigateByUrl('/app');
+      this.router.navigateByUrl('/app/drivers');
       return false
     }else{
       return true

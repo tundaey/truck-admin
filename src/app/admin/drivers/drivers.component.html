@@ -5,7 +5,7 @@
 					<div class="tbl-row">
 						<div class="tbl-cell">
 							<h2 style="display: inline; padding: 10px">Drivers</h2>
-							<button type="button" class="btn btn-inline">New Driver</button>
+							<button [routerLink]="['../driver/new']" type="button" class="btn btn-inline">New Driver</button>
 							<button type="button" class="btn btn-inline">Fleet Owners</button>
 						</div>
 					</div>
@@ -16,9 +16,10 @@
 					<table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
 						<thead>
 						<tr>
+							<th></th>
 							<th>First Name</th>
-              <th>Last Name</th>
-              <th>SS#</th>
+              				<th>Last Name</th>
+              				<th>SS#</th>
 							<th>Last Drug Date</th>
 							<th>Address</th>
 							<th>City</th>
@@ -27,6 +28,7 @@
 						</thead>
 						<tbody>
 						<tr *ngFor="let driver of drivers" [routerLink]="[driver.id, 'info']">
+							<td><input type="checkbox"/></td>
 							<td>{{driver.first}}</td>
 							<td>{{driver.last}}</td>
 							<td>{{driver.ss}}</td>

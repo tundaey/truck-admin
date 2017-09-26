@@ -6,7 +6,7 @@ export class DriverService {
   constructor() {
     this.drivers = [
       {id: "1", first: "Tunde", last: "Ganiy", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
-      {id: "2", first: "Tunde", last: "Ganiy", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
+      {id: "2", first: "Dele", last: "Alli", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
       {id: "3", first: "Tunde", last: "Ganiy", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
       {id: "4", first: "Tunde", last: "Ganiy", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
       {id: "5", first: "Tunde", last: "Ganiy", last_drug_date: Date.now(), address: "Nechells", city: "Birmingham"},
