@@ -33,6 +33,7 @@
         "assets/css/separate/pages/user.min.css",
         "assets/css/separate/vendor/select2.min.css",
         "assets/css/lib/bootstrap/bootstrap.min.css",
+        "assets/css/separate/pages/login.min.css",
          "assets/css/main.css"
       ],
       "scripts": [],
