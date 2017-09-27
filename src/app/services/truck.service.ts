@@ -13,7 +13,7 @@ export class TruckService {
       {id: "5", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Assigned", dispatcher: "", federal_inspection: ""},
       {id: "6", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Assigned", dispatcher: "", federal_inspection: ""},
       {id: "7", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Assigned", dispatcher: "", federal_inspection: ""},
-      {id: "8", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Assigned", dispatcher: "", federal_inspection: ""},
+      {id: "8", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Out of serv", dispatcher: "", federal_inspection: ""},
       {id: "9", unit_no: "123", last_trl: "5112", driver: "Kolejka", status: "Assigned", dispatcher: "", federal_inspection: ""},
   
     ]
